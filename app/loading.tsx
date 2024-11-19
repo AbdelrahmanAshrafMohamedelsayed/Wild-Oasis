@@ -1,7 +1,7 @@
-const loading = () => {
-  return (
-    <div>loading...</div>
-  )
-}
+import Spinner from "./_components/Spinner";
 
-export default loading
+const loading = () => {
+  return <Spinner />;
+};
+
+export default loading;
