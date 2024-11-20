@@ -2,12 +2,18 @@ import { Metadata } from "next";
 import Image from "next/image";
 import about1 from "@/public/about-1.jpg";
 import Link from "next/link";
+import { getCabins } from "../_lib/data-service";
+// revalidate every 1 day (60 * 60 * 24)
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   title: "About",
   description: "About The Wild Oasis",
 };
+//
+export default async function About() {
+  const cabins = await getCabins(); // the data here will not be null as we are fetching it from the database and wait in this line of await andnot go down until the data is fetched
 
-export default function About() {
   return (
     <div className="grid grid-cols-5 gap-x-24 gap-y-32 text-lg items-center">
       <div className="col-span-3">
@@ -24,10 +30,10 @@ export default function About() {
             and enjoying simple pleasures with family.
           </p>
           <p>
-            Our 8 luxury cabins provide a cozy base, but the real freedom and
-            peace you&apos;ll find in the surrounding mountains. Wander through
-            lush forests, breathe in the fresh air, and watch the stars twinkle
-            above from the warmth of a campfire or your hot tub.
+            Our {cabins.length} luxury cabins provide a cozy base, but the real
+            freedom and peace you&apos;ll find in the surrounding mountains.
+            Wander through lush forests, breathe in the fresh air, and watch the
+            stars twinkle above from the warmth of a campfire or your hot tub.
           </p>
           <p>
             This is where memorable moments are made, surrounded by
