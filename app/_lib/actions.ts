@@ -91,7 +91,7 @@ export async function deleteReservation(bookingId: number) {
   revalidatePath("/account/reservations");
 }
 export async function updateReservation(bookingId: number, formData: FormData) {
-  console.log({bookingId});
+  // console.log({bookingId});
   // in any server action we need to authenticate the user
   const session = await auth();
   
@@ -101,7 +101,6 @@ export async function updateReservation(bookingId: number, formData: FormData) {
   const bookings: BookingWithCabin[] =
     bookingsOld as unknown as BookingWithCabin[];
   const bookingsIds = bookings.map((booking) => booking.id);
-  console.log({bookingsIds});
   if (!bookingsIds.includes(+bookingId))
     throw new Error("You do not own this reservation");
   // get the data from the form

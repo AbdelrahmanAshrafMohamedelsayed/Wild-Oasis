@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 
   const ids = cabins.map((cabin) => ({ cabinId: String(cabin.id) })); // it should be in this format {cabinId: String(cabin.id)}
   // params.id is a string, so we need to convert it to a number
-  console.log(ids);
+  // console.log(ids);
   return ids;
 }
 

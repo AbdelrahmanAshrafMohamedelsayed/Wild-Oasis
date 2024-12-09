@@ -1,3 +1,5 @@
+import { Tables } from "./supabase-types";
+
 export type CabinProps = {
     id: number;
     description?: string | null;

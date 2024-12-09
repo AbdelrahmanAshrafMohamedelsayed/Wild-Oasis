@@ -10,7 +10,7 @@ type CabinListProps = {
 const CabinList = async ({ filter }: CabinListProps) => {
   // unstable_noStore(); // this will not cache the component so it will make the whole of it's route dynamic and will not cache it
   const cabins = await getCabins(); // the data here will not be null as we are fetching it from the database and wait in this line of await andnot go down until the data is fetched
-  console.log({ cabins });
+  // console.log({ cabins });
   if (!filter) {
     filter = "all";
   }

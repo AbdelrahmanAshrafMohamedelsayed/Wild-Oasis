@@ -14,7 +14,7 @@ export default function Error({
       <button
         className="inline-block bg-accent-500 text-primary-800 px-6 py-3 text-lg"
         onClick={() => {
-          console.log("Reset function called"); // Debugging line
+          // console.log("Reset function called"); // Debugging line
           reset();
         }}
       >

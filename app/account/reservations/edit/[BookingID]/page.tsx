@@ -2,6 +2,10 @@ import { Button } from "@/app/_components/Button";
 import { updateReservation } from "@/app/_lib/actions";
 import { getBooking, getCabin } from "@/app/_lib/data-service";
 
+export const metadata = {
+  title: "Edit Reservation",
+  description: "Edit your reservation",
+};
 export default async function Page({
   params,
 }: {
@@ -9,11 +13,11 @@ export default async function Page({
 }) {
   // CHANGE
   const { BookingID } = await params;
-  console.log(BookingID);
+  // console.log(BookingID);
   //   const BookingID = 23;
   //   1) get the booking data
   const bookingData = await getBooking(BookingID);
-  console.log({ bookingData });
+  // console.log({ bookingData });
   //   2) get the max capacity
   const { maxCapacity } = await getCabin(bookingData.cabinId as number);
   //   const maxCapacity = 23;
