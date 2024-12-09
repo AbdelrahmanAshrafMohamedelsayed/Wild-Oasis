@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/app/_styles/globals.css";
 import { Josefin_Sans } from "next/font/google";
 import Header from "./_components/Header";
+import { ReservationProvider } from "./_context/ReservationContext";
 
 const Josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -33,7 +34,9 @@ export default function RootLayout({
       >
         <Header />
         <div className="flex-1 px-8 py-12">
-          <main className="max-w-7xl mx-auto">{children}</main>
+          <main className="max-w-7xl mx-auto">
+            <ReservationProvider>{children}</ReservationProvider>
+          </main>
         </div>
       </body>
     </html>

@@ -37,7 +37,7 @@ export type Database = {
       bookings: {
         Row: {
           cabinPrice: number | null
-          cabinsId: number | null
+          cabinId: number | null
           created_at: string
           endDate: string | null
           extrasPrice: number | null
@@ -54,7 +54,7 @@ export type Database = {
         }
         Insert: {
           cabinPrice?: number | null
-          cabinsId?: number | null
+          cabinId?: number | null
           created_at?: string
           endDate?: string | null
           extrasPrice?: number | null
@@ -71,7 +71,7 @@ export type Database = {
         }
         Update: {
           cabinPrice?: number | null
-          cabinsId?: number | null
+          cabinId?: number | null
           created_at?: string
           endDate?: string | null
           extrasPrice?: number | null
@@ -88,8 +88,8 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "bookings_cabinsId_fkey"
-            columns: ["cabinsId"]
+            foreignKeyName: "bookings_cabinId_fkey"
+            columns: ["cabinId"]
             isOneToOne: false
             referencedRelation: "cabins"
             referencedColumns: ["id"]

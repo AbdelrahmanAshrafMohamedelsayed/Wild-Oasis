@@ -3,6 +3,7 @@ import React, { Suspense } from "react";
 import CabinList from "../_components/CabinList";
 import Spinner from "../_components/Spinner";
 import Filter from "../_components/Filter";
+import ReservationReminder from "../_components/ReservationReminder";
 // to make the page dynamic and don't cache it
 // export const revalidate = 0; //
 // to enable the ISR for the page
@@ -40,6 +41,7 @@ export default async function Page({
       </div>
       <Suspense fallback={<Spinner />} key={capacity as string}>
         <CabinList filter={capacity} />
+        <ReservationReminder />
       </Suspense>
     </div>
   );
