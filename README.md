@@ -40,31 +40,31 @@
 
 ### 🚶‍➡️Login
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/login-page.png?raw=true)
+![screenshot](https://github.com/AbdelrahmanAshrafMohamedelsayed/Wild-Oasis/tree/master/screenshots/login-page.png?raw=true)
 
 ### 🏠 Home Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/home-page.png?raw=true)
+![screenshot](https://github.com/AbdelrahmanAshrafMohamedelsayed/Wild-Oasis/tree/master/screenshots/home-page.png?raw=true)
 
 ### 🏠 Cabin Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/cabins-page.png?raw=true)
+![screenshot](https://github.com/AbdelrahmanAshrafMohamedelsayed/Wild-Oasis/tree/master/screenshots/cabins-page.png?raw=true)
 
 ### About Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/about-page.png?raw=true)
+![screenshot](https://github.com/AbdelrahmanAshrafMohamedelsayed/Wild-Oasis/tree/master/screenshots/about-page.png?raw=true)
 
 ### Details and Reservation Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/DetailsandReservation-page.png?raw=true)
+![screenshot](https://github.com/AbdelrahmanAshrafMohamedelsayed/Wild-Oasis/tree/master/screenshots/DetailsandReservation-page.png?raw=true)
 
 ### Account Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/account-page.png?raw=true)
+![screenshot](https://github.com/AbdelrahmanAshrafMohamedelsayed/Wild-Oasis/tree/master/screenshots/account-page.png?raw=true)
 
 ### ⚙️ Update Account Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/update-profile-page.png?raw=true)
+![screenshot](https://github.com/AbdelrahmanAshrafMohamedelsayed/Wild-Oasis/tree/master/screenshots/update-profile-page.png?raw=true)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
